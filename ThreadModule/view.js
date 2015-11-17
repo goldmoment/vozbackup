@@ -35,6 +35,19 @@ define(["jquery"], function($) {
 				that.controller.loadNext();
 			}
 		});
+
+		$('.left-panel').hover(
+			function(argument) {
+				$(this).css({
+					opacity: 1.0
+				});
+			},
+			function function_name (argument) {
+				$(this).css({
+					opacity: 0.3
+				});
+			}
+		);
 	}
 
 	View.prototype.clear = function() {
